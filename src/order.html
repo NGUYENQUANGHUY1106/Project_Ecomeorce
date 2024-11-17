@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="py-8 sticky top-0 bg-white shadow-md z-[999]"> 
+        <div class="container flex items-center">
+           <a href="/src/index.html"><img class="w-130" src="/images/logo.webp" alt=""></a>
+           <div>
+            <div class="relative w-[500px] ml-10">
+              <input class=" border rounded-full w-full h-10 border-black py-2 pl-10 pr-4" type="text" placeholder="Search...">
+             <div class="absolute top-1/2 left-3 size-5 -translate-y-1/2">
+              <img class="image" src="/images/ico_search.png" alt="">
+             </div>
+           </div>
+            </div>
+            <nav class="mx-20">
+              <ul class="flex gap-10 items-center">
+                <li class="relative after:duration-300 after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:transition-all after:h-[2px] after:left-0 after:bottom-0 after:bg-black"><a href="#">Home</a></li>
+                <li class="relative after:duration-300 after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:transition-all after:h-[2px] after:left-0 after:bottom-0 after:bg-black"><a href="#">Shop</a></li>
+                <li class="relative after:duration-300 after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:transition-all after:h-[2px] after:left-0 after:bottom-0 after:bg-black"><a href="#">Product</a></li>
+                <li class="relative after:duration-300 after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:transition-all after:h-[2px] after:left-0 after:bottom-0 after:bg-black"><a href="#">Blog</a></li>
+                <li class="relative after:duration-300 after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:transition-all after:h-[2px] after:left-0 after:bottom-0 after:bg-black"><a href="#">Fetured</a></li>
+               </ul>
+            </nav>
+            <ul class="flex gap-6 ml-auto">
+              <li class="size-5 ">
+                <a href="/src/login.html">
+                <img class="image" src="/images/ico_user.png" alt="">
+               </a>
+              </li>
+  
+              <li class="size-5 relative">
+                <a href="">
+                <img class="image" src="/images/ico_heart.png" alt="">
+                </a>
+                <span class="absolute -top-[8px] -right-[8px] text-white bg-black rounded-full text-xs grid place-items-center size-[18px]">10</span>
+              </li>
+              
+              <li class="size-5 relative">
+                <a href="/src/shopping_cart.html">
+                  <img class="image" src="/images/ico_bag.png" alt="">
+                </a>
+                <span class="absolute -top-[8px] -right-[8px] text-white bg-black rounded-full text-xs grid place-items-center size-[18px]">3</span>
+              </li>
+  
+            </ul>
+       </div>
+    </header>
+    <main>
+        <section>
+            <div class="pt-16">
+             <h2 class="font-semibold text-[30px] leading-9 text-center">Payment Order</h2>
+            </div>
+            <div class="container flex gap-8 mt-2 ">
+                <div class="flex-1">
+                    <div>
+                        <p class="text-[18px] font-semibold leading-7">Contact</p>
+                        <input type="text" placeholder="Email or mobile phone number" class="w-full border border-gray-300 p-5 rounded-[10px] mt-2 text-[14px]">
+                        <div class="flex items-center gap-2 mt-3">
+                        <input class="size-4" type="checkbox" name="" id="">
+                        <span class="text-[14px]">Email me with news and offers</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[18px] font-semibold leading-7 mt-7">
+                            Delivery
+                        </p>
+                        <div class="flex items-center gap-2 mt-3">
+                            <input class="size-4" type="checkbox" name="" id="">
+                            <span class="text-[14px]">Ship</span>
+                        </div>
+                        <div class="flex items-center gap-2 mt-3">
+                            <input type="checkbox" name="" id="" class="size-4">
+                            <span class="text-[14px]">Pick up in store</span>
+                        </div>
+                    </div>
+                    <div>
+                        <select class="w-full border border-gray-300 mt-6 p-3 rounded-[10px] focus:outline-black" name="" id="">
+                            <option class="text-[14px]" value="">Viet Nam</option>
+                            <option class="text-[14px]" value="">Argentina</option>
+                            <option class="text-[14px]" value="">ManchesterUnited</option>
+                            <option class="text-[14px]" value="">RealMarid</option>
+                        </select>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <div class="mt-8 flex-1 ">
+                            <input type="text" class="text-[14px] border border-gray-300 w-full p-5 rounded-[10px]" placeholder="First name">
+                        </div>
+                        <div class="mt-8 flex-1 ">
+                            <input type="text" class="text-[14px] border border-gray-300 w-full p-5 rounded-[10px]" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <input type="text" placeholder="Address" class="text-[14px] p-5 mt-2 w-full border border-gray-300 rounded-[10px]">
+                    </div>
+                    <div class="mt-3">
+                        <input type="text" placeholder="Apartment, suite, etc(optional)" class="text-[14px] p-5 mt-2 w-full border border-gray-300 rounded-[10px]">
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="mt-3 flex-1">
+                            <input type="text" placeholder="City" class="text-[14px] w-full rounded-[10px] border border-gray-300 mt-2 p-5 ">
+                        </div>
+                        <div class="mt-3 flex-1">
+                            <input type="text" placeholder="Postal code(optional)" class="text-[14px] w-full rounded-[10px] border border-gray-300 mt-2 p-5 ">
+                        </div>
+                    </div>
+                    <div class="flex gap-2 items-center mt-3">
+                        <input type="checkbox" name="" id="" class="size-4">
+                        <span class="text-[14px]">Save this information for next time</span>
+                    </div>
+                    <div class="mt-9">
+                        <p class="text-[16px] font-semibold leading-5">Shipping method</p>
+                        <div class="w-full border border-blue-300 rounded-[10px] p-4 mt-3 flex items-center bg-[#F0F5FF]">
+                            <span class="text-[14px] leading-5 flex-1">Standard</span>
+                            <span class="text-[14px] font-semibold">FREE</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 ">
+                        <button href="#" class="text-[14px] font-semibold leading-5 px-4 h-[55px] duration-300 transition-all rounded-[20px] bg-black text-white border border-black hover:bg-white hover:text-black w-full">
+                            PAY NOW
+                        </button>
+                    </div>
+                </div>
+                <div class="flex-1 p-10 mx-5">
+                    <div class="flex items-center">
+                       <div class="flex gap-3 items-center">
+                        <div class="overflow-hidden image size-16 rounded-md">
+                            <img src="/images/img_order.webp" alt="" class=" size-16 border-gray-400 rounded-md  hover:scale-[1.1] duration-300 transition-all">
+                        </div>
+                        <div>
+                            <p class="text-[16px] leading-5">
+                                Suspension Archives
+                            </p>
+                        </div>
+                       </div>
+                       <div class="ml-auto">
+                        <span>$59.00</span>
+                       </div>
+                    </div>
+                    <div class="flex items-center mt-3">
+                        <div class="flex gap-3 items-center">
+                         <div class="overflow-hidden image size-16 rounded-md">
+                             <img src="/images/img_order.webp" alt="" class=" size-16 border-gray-400 rounded-md  hover:scale-[1.1] duration-300 transition-all">
+                         </div>
+                         <div>
+                             <p class="text-[16px] leading-5">
+                                 Suspension Archives
+                             </p>
+                         </div>
+                        </div>
+                        <div class="ml-auto">
+                         <span>$59.00</span>
+                        </div>
+                     </div>
+                     <div class="mt-6">
+                        <div class="flex items-center justify-between">
+                            <span>Subtotal • 2 items</span>
+                            <span>$119.00</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-4">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-4">
+                            <span>Estimated taxes</span>
+                            <span>$19.00</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-[18px] leading-7 font-bold">Total</span>
+                            <span class="text-[18px] leading-7 font-bold">USD $130.90</span>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-12"></section>
+        <footer class="py-12">
+            <div class="container">
+              <div class="flex flex-wrap items-center justify-between">
+                <div>
+                  <h3 class="text-[18px] leading-7 font-bold mb-4">
+                   About Us
+                  </h3>
+                  <ul class="space-y-2">
+                   <li>
+                     <a class="text-[16px] leading-5" href="#">
+                       Our Shops
+                     </a>
+                   </li>
+   
+                   <li>
+                     <a class="text-[16px] leading-5" href="#">
+                       Contact
+                     </a>
+                   </li>
+   
+                   <li>
+                     <a class="text-[16px] leading-5" href="#">
+                       Artists
+                     </a>
+                   </li>
+   
+                   <li>
+                     <a class="text-[16px] leading-5" href="#">
+                       Local Giving
+                     </a>
+                   </li>
+   
+                   <li>
+                     <a class="text-[16px] leading-5" href="#">
+                       Press
+                     </a>
+                   </li>
+   
+                  </ul>
+                </div>
+                <div>
+                   <h3 class="font-bold text-[20px] mb-4 lg:text-center">Sign Up For Our Newsletter To Receive Notifications And Other Promotions</h3>
+                   <div class="flex mt-4">
+                      <input class="flex-grow px-4 py-4 rounded-l-full border border-r-0 border-gray-300 focus:outline-none focus:border-black" type="email" placeholder="Email address">
+                      <button class="bg-black text-white px-6 py-2 rounded-r-full hover:bg-gray-800 transition duration-300" type="button">Subscribe</button>
+                   </div>
+                </div>
+                <div>
+                 <h3 class="text-[18px] leading-7 font-bold mb-4">
+                   Customer Services
+                 </h3>
+                 <ul class="space-y-2">
+                  <li>
+                    <a class="text-[16px] leading-5" href="#">
+                     FAQs
+                    </a>
+                  </li>
+   
+                  <li>
+                    <a class="text-[16px] leading-5" href="#">
+                     Store Locator
+                    </a>
+                  </li>
+   
+                  <li>
+                    <a class="text-[16px] leading-5" href="#">
+                     Returns
+                    </a>
+                  </li>
+   
+                  <li>
+                    <a class="text-[16px] leading-5" href="#">
+                     Shipping Information
+                    </a>
+                  </li>
+   
+                  <li>
+                    <a class="text-[16px] leading-5" href="#">
+                     Wholesale
+                    </a>
+                  </li>
+   
+                 </ul>
+               </div>
+              </div>
+              <div class="text-center">
+                <p>
+                  Copyright © 2024. All Right Reserved
+                </p>
+              </div>
+            </div>
+          </footer>
+    </main>
+</body>

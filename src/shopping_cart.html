@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="py-8 sticky top-0 bg-white shadow-md z-[999]"> 
+        <div class="container flex items-center">
+           <a href="/src/index.html"><img class="w-130" src="/images/logo.webp" alt=""></a>
+           <div>
+            <div class="relative w-[500px] ml-10">
+              <input class=" border rounded-full w-full h-10 border-black py-2 pl-10 pr-4" type="text" placeholder="Search...">
+             <div class="absolute top-1/2 left-3 size-5 -translate-y-1/2">
+              <img class="image" src="/images/ico_search.png" alt="">
+             </div>
+           </div>
+            </div>
+            <nav class="mx-20">
+              <ul class="flex gap-10 items-center">
+                <li class="relative after:duration-300 after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:transition-all after:h-[2px] after:left-0 after:bottom-0 after:bg-black"><a href="#">Home</a></li>
+                <li class="relative after:duration-300 after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:transition-all after:h-[2px] after:left-0 after:bottom-0 after:bg-black"><a href="#">Shop</a></li>
+                <li class="relative after:duration-300 after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:transition-all after:h-[2px] after:left-0 after:bottom-0 after:bg-black"><a href="#">Product</a></li>
+                <li class="relative after:duration-300 after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:transition-all after:h-[2px] after:left-0 after:bottom-0 after:bg-black"><a href="#">Blog</a></li>
+                <li class="relative after:duration-300 after:absolute after:w-full after:scale-x-0 hover:after:scale-100 after:transition-all after:h-[2px] after:left-0 after:bottom-0 after:bg-black"><a href="#">Fetured</a></li>
+               </ul>
+            </nav>
+            <ul class="flex gap-6 ml-auto">
+              <li class="size-5 ">
+                <a href="/src/login.html">
+                <img class="image" src="/images/ico_user.png" alt="">
+               </a>
+              </li>
+  
+              <li class="size-5 relative">
+                <a href="">
+                <img class="image" src="/images/ico_heart.png" alt="">
+                </a>
+                <span class="absolute -top-[8px] -right-[8px] text-white bg-black rounded-full text-xs grid place-items-center size-[18px]">10</span>
+              </li>
+              
+              <li class="size-5 relative">
+                <a href="/src/shopping_cart.html">
+                  <img class="image" src="/images/ico_bag.png" alt="">
+                </a>
+                <span class="absolute -top-[8px] -right-[8px] text-white bg-black rounded-full text-xs grid place-items-center size-[18px]">3</span>
+              </li>
+  
+            </ul>
+       </div>
+    </header>
+    <main>
+        <section class="pt-20">
+            <div class="text-center">
+             <h1 class="text-[30px] font-semibold leading-9">
+                 Shopping Cart
+             </h1>
+            </div>
+            <div class="container mt-10 flex gap-8 ">
+              <div class="w-full">
+                <div class="hidden lg:flex">
+                  <div class="w-2/4 text-[16px] leading-5 p-5 border border-gray-300 flex justify-center items-center">Product</div>
+                  <div class="w-1/4 text-[16px] leading-5 p-5 border border-gray-300 flex justify-center items-center">Quantity </div>
+                  <div class="w-1/4 text-[16px] leading-5 p-5 border border-gray-300 flex justify-center items-center">Total</div>
+                  <div class="w-1/4 p-5 border border-gray-300 flex justify-center items-center ">
+                    
+                  </div>
+               </div>
+               <div class="flex ">
+                <div class="flex flex-wrap items-center gap-3 p-2 border border-gray-300 w-2/4">
+                    <div class="w-[128px]">
+                        <img class="image overflow-hidden object-contain " src="/images/img_product_cart.avif" alt="">
+                    </div>
+                    <div>
+                        <p class="text-xs">CH07 SHELL CHAIR – LEATHER</p>
+                        <span class="text-xs">$75.00</span>
+                    </div>
+                </div>
+
+                <div class="p-5 border border-gray w-1/4 justify-center lg:flex hidden">
+                    <div class="flex items-center w-max relative ">
+                    <button class=" text-[24px]  absolute left-4 flex items-center ">-</button>
+                    <input  class="w-[120px] h-[40px] border px-10 border-black rounded-full text-center" type="text" value="1">
+                    <button class=" text-[24px] absolute right-4 flex items-center">+</button>
+                    </div>
+                </div>
+
+                <div class="flex w-1/4 items-center justify-center border border-gray-300">
+                    <p class="text-[16px]">$150.00</p>
+                </div>
+                <div class="w-1/4 flex items-center justify-center border border-gray-300">
+                    <img class="image size-5" src="/images/ico_trash.png" alt="icon_trash">
+                </div>
+               </div>
+               <div class="flex">
+                <div class="flex gap-3 items-center w-2/4 border border-gray-300 p-2">
+                    <div>
+                        <img class="image w-[128px] overflow-hidden object-contain" src="/images/img_product_cart2.avif" alt="">
+                    </div>
+                    <div>
+                        <p class="text-xs">CH07 SHELL CHAIR – LEATHER</p>
+                        <span class="text-xs">$75.00</span>
+                    </div>
+                </div>
+                <div class="w-1/4 border border-gray-300 flex justify-center items-center p-5">
+                    <div class="flex relative w-max items-center">
+                      <button class="text-[24px] absolute left-4 flex justify-center items-center">-</button>
+                      <input class="border border-black text-center w-[120px] h-[40px] rounded-full" type="text" value="1">
+                      <button class="absolute right-4 text-[24px] flex justify-center items-center">+</button>
+                    </div>
+                </div>
+                <div class="flex w-1/4 items-center justify-center border border-gray-300">
+                    <p class="text-[16px]">$150.00</p>
+                </div>
+                <div class="w-1/4 flex items-center justify-center border border-gray-300">
+                    <img class="image size-5" src="/images/ico_trash.png" alt="icon_trash">
+                </div>
+               </div>
+               <div class="mt-9">
+                  <p class="text-[16px]">Special instructions for seller
+                  </p>
+                  <textarea class="border border-gray-300 mt-3 p-5 w-full" name="" id="" cols="30" rows="5" placeholder="how can we help you ?"></textarea>
+               </div>
+              </div>
+
+               <div>
+                <div class="p-7 bg-[#F7F4EF] rounded-[20px]">
+                    <p class="text-sm font-medium leading-5">FREE SHIPPING ON ORDERS $100.00</p>
+                    <p class="text-sm font-medium leading-5 mt-2">Congratulations , you've got free shipping!</p>
+                    <p class="w-full bg-[#14c100] h-1 mt-5"></p>
+                </div>
+                <div class="mt-6 bg-[#F6F6F6] p-6 rounded-[20px]">
+                    <p class="text-[16px]">Coupon</p>
+                    <p class="text-[16px] text-[#8A8A8A] mt-2 mb-6">* Discount will be calculated and applied at checkout   </p>
+                    <input type="text" placeholder="Coupon code" class="border border-gray-300 px-6 h-[40px] rounded-[10px] w-full">
+                    <p class="text[16px] mt-6 font-semibold">Total: $450.00</p>
+                    <a href="/src/order.html"  class="hover:bg-white hover:text-black border border-black bg-black text-white mt-6 px-4 font-semibold h-[50px] w-full flex items-center justify-center rounded-[20px]">Check out</a>
+                </div>
+               </div>
+            </div>
+        </section>
+        <section class="py-12">
+            <footer class="py-12">
+                <div class="container">
+                  <div class="flex flex-wrap items-center justify-between">
+                    <div>
+                      <h3 class="text-[18px] leading-7 font-bold mb-4">
+                       About Us
+                      </h3>
+                      <ul class="space-y-2">
+                       <li>
+                         <a class="text-[16px] leading-5" href="#">
+                           Our Shops
+                         </a>
+                       </li>
+       
+                       <li>
+                         <a class="text-[16px] leading-5" href="#">
+                           Contact
+                         </a>
+                       </li>
+       
+                       <li>
+                         <a class="text-[16px] leading-5" href="#">
+                           Artists
+                         </a>
+                       </li>
+       
+                       <li>
+                         <a class="text-[16px] leading-5" href="#">
+                           Local Giving
+                         </a>
+                       </li>
+       
+                       <li>
+                         <a class="text-[16px] leading-5" href="#">
+                           Press
+                         </a>
+                       </li>
+       
+                      </ul>
+                    </div>
+                    <div>
+                       <h3 class="font-bold text-[20px] mb-4 lg:text-center">Sign Up For Our Newsletter To Receive Notifications And Other Promotions</h3>
+                       <div class="flex mt-4">
+                          <input class="flex-grow px-4 py-4 rounded-l-full border border-r-0 border-gray-300 focus:outline-none focus:border-black" type="email" placeholder="Email address">
+                          <button class="bg-black text-white px-6 py-2 rounded-r-full hover:bg-gray-800 transition duration-300" type="button">Subscribe</button>
+                       </div>
+                    </div>
+                    <div>
+                     <h3 class="text-[18px] leading-7 font-bold mb-4">
+                       Customer Services
+                     </h3>
+                     <ul class="space-y-2">
+                      <li>
+                        <a class="text-[16px] leading-5" href="#">
+                         FAQs
+                        </a>
+                      </li>
+       
+                      <li>
+                        <a class="text-[16px] leading-5" href="#">
+                         Store Locator
+                        </a>
+                      </li>
+       
+                      <li>
+                        <a class="text-[16px] leading-5" href="#">
+                         Returns
+                        </a>
+                      </li>
+       
+                      <li>
+                        <a class="text-[16px] leading-5" href="#">
+                         Shipping Information
+                        </a>
+                      </li>
+       
+                      <li>
+                        <a class="text-[16px] leading-5" href="#">
+                         Wholesale
+                        </a>
+                      </li>
+       
+                     </ul>
+                   </div>
+                  </div>
+                  <div class="text-center">
+                    <p>
+                      Copyright © 2024. All Right Reserved
+                    </p>
+                  </div>
+                </div>
+              </footer>
+        </section>
+    </main>
+</body>
